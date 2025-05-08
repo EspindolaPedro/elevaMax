@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+
+@theme {
+    --font-title:"Sora", "sans-serif";
+    --font-text:"Inter", "sans-serif";
+}
+body, html {
+  scroll-behavior: smooth;
+}
+
+#smooth-wrapper {
+  will-change: transform;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #E57113, #FDB932);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s ease infinite;
+    background-size: 800% 800%;
+  }
+
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+html {
+  overflow-x: hidden;
+}
+
+  .card-hover-mouse {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    z-index: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-hover-mouse::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4fcf70, #ffd700, #ff6ec4);
+    background-size: 800% 800%;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  
+  .card-hover-mouse.active::before {
+    opacity: 1;
+    animation: animate-border 6s linear infinite;
+  }
+  
+  @keyframes animate-border {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

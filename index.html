@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./src/output.css" rel="stylesheet" />
+
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
+  <script src="src/gsap.js"></script>
+  <script src="src/script.js"></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K7X73B72');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<body class="bg-[#000615] overflow-x-hidden text-white relative">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7X73B72" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+  <!-- HERO -->
+  <section
+    class="flex flex-col items-center justify-center px-3 pb-10 bg-[url(/src/images/logo-bg.png)] bg-no-repeat bg-right-top "
+    aria-label="hero">
+    <img class="mx-auto mt-2 w-[70%] md:w-auto" src="./src/images/logo.png" alt="Logo ElevaMax" />
+
+    <h1 class="font-title text-2xl md:text-4xl md:max-w-[38ch] text-center block mt-8 md:leading-12 font-semibold">
+      TRANSFORME A GESTÃO DA SUA EMPRESA E NÃO <span class="gradient-text">QUEBRE NUNCA</span>.
+    </h1>
+
+    <p class="max-w-[55ch] text-center font-text text-[19px] md:text-2xl font-normal mt-6">
+      Cansado de ver sua empresa estagnada sem <span class="bg-[#ED5A29] p-0.5">perspectiva de crescimento</span> ou sem
+      uma direção clara sobre sua operação?
+    </p>
+
+    <iframe class="mt-12 w-[98%] md:w-[560px]" width="560" height="315"
+      src="https://www.youtube-nocookie.com/embed/-2CAbyAK3Tg?si=OZtu2cmgJOV5k4ic&amp;controls=0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p class="max-w-[40ch] mt-6 font-text text-base md:text-2xl text-center text-[#F9F9F9]">
+      Quer dominar vendas, marketing, financeiro, processos e IA para crescer de verdade?
+    </p>
+
+      <div class="absolute w-120 h-90 bg-[#FB882B] opacity-30 blur-[280px] rounded-full z-10 right-0"></div>
+    
+     
+
+    <a href="#vendas" data-botao="botao-1" 
+      class="btn-vendas bg-gradient-to-r from-[#F26131] to-[#D33500] py-2 px-14 font-title font-semibold text-sm md:text-base mt-4.5 cursor-pointer hover:scale-95 ease-in duration-300 inline-flex items-center justify-center gap-4">
+      QUERO ME INSCREVER AGORA
+      <img src="src/images/icons/arrow-btn.svg" class="w-4 h-4 relative top-[-2px]" alt="">
+    </a>
+
+    <h2 class="mt-12 font-title text-4xl font-semibold text-center">A ElevaMax <span class="gradient-text">é para
+        você</span>, que deseja:</h2>
+
+    <ul class="font-text text-[18px] text-[#EBEBEB] max-w-[55ch]">
+      <li class="flex gap-4 mt-8 py-3 p-4 bg-[#010A26]">
+        <img src="src/images/icons/money.svg" alt="">
+        dominar as vendas e aumentar seu faturamento
+      </li>
+      <li class="flex gap-4 p-2">
+        <img src="src/images/icons/people.svg" alt="">
+        atrair novos clientes e fortalecer sua marca
+      </li>
+      <li class="flex gap-4 p-2 bg-[#010A26]">
+        <img src="src/images/icons/target.svg" alt="">
+        ter controle do seu caixa e tomar decisões estratégicas sobre se negócio
+      </li>
+      <li class="flex gap-4 p-2">
+        <img src="src/images/icons/anlysis.svg" alt="">
+        organizar sua operação para escalar
+      </li>
+      <li class="flex gap-4 p-2 bg-[#010A26]">
+        <img src="src/images/icons/robot.svg" alt="">
+        automatizar e potencializar seu resultados com Inteligência Artificial.
+      </li>
+    </ul>
+
+    <p class="font-text text-base text-center mt-4">Já ajudamos centenas de empresários. Agora é sua vez!</p>
+
+    <h3 class="font-title font-semibold text-[32px] md:text-[38px] md:max-w-[25ch] text-center leading-[39px] mt-16">
+      <span class="gradient-text">A academia</span> em gestão de performance empresarial
+    </h3>
+
+    <p class="font-text text-[17px] md:text-[22px] md:leading-[29px] max-w-[65ch] text-center mt-6 font-light">
+      É uma plataforma completa de capacitação empresarial contínua, desenhada para empresários, líderes e profissionais
+      que querem sair da estagnação, acelerar seus resultados e construir negócios sólidos e sustentáveis.
+    </p>
+
+
+
+
+
+
+
+  </section>
+  <div class="bg-[url('/src/images/grid.png')] ">
+
+    <!-- GRID DE CARDS -->
+    <section class="text-white max-w-7xl mx-auto pb-16 px-3">
+      <h1 class="font-title text-3xl md:text-4xl font-semibold text-center">Veja o que você vai aprender neste
+        treinamento.</h1>
+      <h2 class="font-text text-2xl text-center mt-3.5">tudo passo a passo para você aplicar e ter resultados!</h2>
+
+      <div class="grid grid-cols-12 gap-4 p-4 max-w-6xl mx-auto">
+        <div class="col-span-12 md:col-span-7 bg-[#0e111b] p-6 rounded-md  card-hover-mouse">
+          <h3 class="gradient-text font-bold mb-2 flex items-center gap-2 text-xl">
+            <img src="src/images/icons/trail.svg" class="w-5 h-5" alt="">
+            Trilhas de Gestão Empresarial
+          </h3>
+          <p class="text-gray-300 text-base">Conteúdos práticos e aplicáveis sobre liderança, gestão de pessoas,
+            planejamento estratégico, indicadores de performance, cultura organizacional, finanças e operações.</p>
+        </div>
+
+        <div class="col-span-12 md:col-span-5 bg-[#0e111b] p-6 rounded-md  card-hover-mouse">
+          <h3 class="gradient-text font-bold mb-2 flex items-center gap-2 text-xl">
+            <img src="src/images/icons/business.svg" class="w-5 h-5" alt="">
+            Treinamentos de Inteligência de Negócios
+          </h3>
+          <p class="text-gray-300 text-base">Métodos modernos para tomada de decisão baseada em dados e para criação de
+            estratégias competitivas no mercado.</p>
+        </div>
+
+        <div class="col-span-12 md:col-span-4 bg-[#0e111b] p-6 rounded-md  card-hover-mouse">
+          <h3 class="gradient-text font-bold mb-2 flex items-center gap-2 text-xl">
+            <img src="src/images/icons/marterclass.svg" class="w-5 h-5" alt="">
+            Workshops e Masterclasses Exclusivas
+          </h3>
+          <p class="text-gray-300 text-base">Aulas especiais com profissionais de alta performance e referência no
+            mercado, trazendo experiências reais e soluções práticas para os desafios do dia a dia.</p>
+        </div>
+
+        <div class="col-span-12 md:col-span-8 bg-[#0e111b] p-6 rounded-md  card-hover-mouse">
+          <h3 class="gradient-text font-bold mb-2 flex items-center gap-2 text-xl">
+            <img src="src/images/icons/target-focus.svg" class="w-5 h-5" alt="">
+            Foco em Resultados
+          </h3>
+          <p class="text-gray-300 text-base">Organizar a empresa, melhorar o desempenho do time, aumentar a
+            produtividade,
+            maximizar resultados financeiros e construir um modelo de gestão escalável.</p>
+        </div>
+
+        
+
+        <div class="col-span-12 md:col-span-6 bg-[#0e111b] p-6 rounded-md  card-hover-mouse">
+          <h3 class="gradient-text font-bold text-xl mb-2 flex items-center gap-2">
+            <img src="src/images/icons/update.svg" class="w-5 h-5" alt="">
+            Atualização Constante
+          </h3>
+          <p class="text-gray-300 text-base">O conteúdo é atualizado frequentemente para manter você sempre à frente das
+            mudanças e tendências do mercado.</p>
+        </div>
+
+
+        <div class="col-span-12 md:col-span-6 bg-[#0e111b] p-6 rounded-md  card-hover-mouse">
+          <h3 class="gradient-text font-bold mb-2 flex items-center gap-2 text-xl">
+            <img src="src/images/icons/material.svg" class="w-5 h-5" alt="">
+            Materiais de Apoio e Ferramentas Aplicáveis
+          </h3>
+          <p class="text-gray-300 text-base">Planilhas de controle, templates e guias para aplicar direto no seu
+            negócio,
+            sem reinventar a roda.</p>
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <section class=" max-w-7xl mx-auto px-3 pb-12">
+
+      <div class="flex justify-center pb-12">
+        <h1 class="font-title font-semibold text-3xl md:text-4xl text-center">O que impede as empresas de terem uma
+          melhor performance?</h1>
+      </div>
+
+      <div class="relative">
+
+        <div class="absolute  top-0 h-full w-[2px] bg-neutral-500 origin-top scale-y-0" id="timeline-line"></div>
+
+        <div class="relative pl-16 space-y-20">
+
+          <div
+            class="timeline-item opacity-0 translate-y-12 relative bg-[#212121] border border-[#3C3C3C] p-4 rounded-md">
+
+            <div class="absolute  -left-[74px] top-1 w-5 h-5 bg-orange-600 rounded-full ring-4 ring-[#0d1117]"></div>
+
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+
+              <img src="src/images/icons/01.svg" alt="primeiro" class="max-w-[40%] md:max-w-auto" />
+
+              <h3
+                class="text-3xl font-semibold gradient-text font-title  md:text-left md:absolute z-10 md:left-[40px] max-w-[14ch]">
+                Falta de clareza estratégica
+              </h3>
+              <!-- Texto -->
+              <div class="w-full md:w-1/2 md:ml-auto mt-2 md:mt-0">
+                <p class="text-neutral-300 font-text text-base md:text-[19]">
+                  Muitas empresas crescem de forma desordenada, sem objetivos claros, sem visão de longo prazo e sem um
+                  plano estruturado. Sem estratégia, as ações se tornam reativas e não sustentáveis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="timeline-item opacity-0 translate-y-12 relative bg-[#212121] border border-[#3C3C3C] p-4 rounded-md">
+            <div class="absolute  -left-[74px] top-1 w-5 h-5 bg-orange-600 rounded-full ring-4 ring-[#0d1117]"></div>
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <img src="src/images/icons/02.svg" alt="primeiro" class="max-w-[40%] md:max-w-auto" />
+              <h3
+                class="text-3xl font-semibold gradient-text font-title  md:text-left md:absolute z-10 md:left-[50px] max-w-[14ch] ">
+                Gestão financeira deficiente
+              </h3>
+              <!-- Texto -->
+              <div class="w-full md:w-1/2 md:ml-auto mt-2 md:mt-0">
+                <p class="text-neutral-300 font-text text-base md:text-[19]">
+                  Empresas que não controlam seu caixa, não acompanham seus custos ou não analisam seus indicadores
+                  financeiros vivem de "sensação" e não de fatos. Sem previsibilidade financeira, não existe crescimento
+                  sólido. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute w-120 h-90 bg-[#FB882B] opacity-30 blur-[280px] rounded-full -z-10 right-0"></div>
+          <div
+            class="timeline-item opacity-0 translate-y-12 relative bg-[#212121] border border-[#3C3C3C] p-4 rounded-md">
+            <div class="absolute  -left-[74px] top-1 w-5 h-5 bg-orange-600 rounded-full ring-4 ring-[#0d1117]"></div>
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <img src="src/images/icons/03.svg" alt="primeiro" class="max-w-[40%] md:max-w-auto" />
+              <h3
+                class="text-3xl font-semibold gradient-text font-title  md:text-left md:absolute z-10 md:left-[40px] max-w-[14ch]">
+                Marketing e vendas desconectados
+              </h3>
+              <!-- Texto -->
+              <div class="w-full md:w-1/2 md:ml-auto mt-2 md:mt-0">
+                <p class="text-neutral-300 font-text text-base md:text-[19]">
+                  Atrair leads e fechar vendas exige conexão entre marketing e vendas. Sem uma jornada estruturada,
+                  perdem-se boas oportunidades e o investimento em marketing vira custo. </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="timeline-item opacity-0 translate-y-12 relative bg-[#212121] border border-[#3C3C3C] p-4 rounded-md">
+            <div class="absolute  -left-[74px] top-1 w-5 h-5 bg-orange-600 rounded-full ring-4 ring-[#0d1117]"></div>
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <img src="src/images/icons/04.svg" alt="primeiro" class="max-w-[40%] md:max-w-auto" />
+              <h3
+                class="text-3xl font-semibold gradient-text font-title  md:text-left md:absolute z-10 md:left-[40px] max-w-[14ch]">
+                Falta de processos organizados
+              </h3>
+              <!-- Texto -->
+              <div class="w-full md:w-1/2 md:ml-auto mt-2 md:mt-0">
+                <p class="text-neutral-300 font-text text-base md:text-[19]">
+                  Sem processos claros, a operação depende de pessoas específicas, gera retrabalho, falhas e atraso.
+                  Empresas desorganizadas ficam reféns de crises internas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="timeline-item opacity-0 translate-y-12 relative bg-[#212121] border border-[#3C3C3C] p-4 rounded-md">
+            <div class="absolute  -left-[74px] top-1 w-5 h-5 bg-orange-600 rounded-full ring-4 ring-[#0d1117]"></div>
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <img src="src/images/icons/05.svg" alt="primeiro" class="max-w-[40%] md:max-w-auto" />
+              <h3
+                class="text-3xl font-semibold gradient-text font-title  md:text-left md:absolute z-10 md:left-[40px] max-w-[14ch]">
+                Baixa utilização de tecnologia e dados </h3>
+              <!-- Texto -->
+              <div class="w-full md:w-1/2 md:ml-auto mt-2 md:mt-0">
+                <p class="text-neutral-300 font-text text-base md:text-[19]">
+                  Negócios que não incorporam inteligência artificial, automações e análise de dados perdem eficiência,
+                  gastam mais e crescem devagar. Tecnologia não é mais diferencial, é necessidade. </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="timeline-item opacity-0 translate-y-12 relative bg-[#212121] border border-[#3C3C3C] p-4 rounded-md">
+            <div class="absolute  -left-[74px] top-1 w-5 h-5 bg-orange-600 rounded-full ring-4 ring-[#0d1117]"></div>
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <img src="src/images/icons/06.svg" alt="primeiro" class="max-w-[40%] md:max-w-auto" />
+              <h3
+                class="text-3xl font-semibold gradient-text font-title  md:text-left md:absolute z-10 md:left-[40px] max-w-[14ch]">
+                Liderança despreparada </h3>
+              <!-- Texto -->
+              <div class="w-full md:w-1/2 md:ml-auto mt-2 md:mt-0">
+                <p class="text-neutral-300 font-text text-base md:text-[19]">
+                  Sem líderes capacitados, as equipes ficam desmotivadas, desorganizadas e sem direção. A falta de
+                  liderança
+                  forte compromete a cultura e a execução estratégica. </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="timeline-item opacity-0 translate-y-12 relative bg-[#212121] border border-[#3C3C3C] p-4 rounded-md">
+
+            <div class="absolute  -left-[74px] top-1 w-5 h-5 bg-orange-600 rounded-full ring-4 ring-[#0d1117]"></div>
+
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <img src="src/images/icons/07.svg" alt="primeiro" class="max-w-[40%] md:max-w-auto" />
+              <h3
+                class="text-3xl font-semibold gradient-text font-title  md:text-left md:absolute z-10 md:left-[40px] max-w-[14ch]">
+                Cultura empresarial fraca </h3>
+              <!-- Texto -->
+              <div class="w-full md:w-1/2 md:ml-auto mt-2 md:mt-0">
+                <p class="text-neutral-300 font-text text-base md:text-[19]">
+                  Empresas sem cultura definida sofrem com alto turnover, baixa produtividade e dificuldade em engajar e
+                  reter talentos. O que impacta diretamente nos resultados.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-16 pb-11">
+        <a href="#vendas" data-botao="botao-2"
+          class="btn-vendas bg-gradient-to-r from-[#F26131] to-[#D33500] py-2 px-14 font-title font-semibold text-sm md:text-base cursor-pointer hover:scale-95 ease-in duration-300 inline-flex items-center justify-center gap-4">
+          QUERO ME INSCREVER AGORA
+          <img src="src/images/icons/arrow-btn.svg" class="w-4 h-4 relative top-[-2px]" alt="">
+        </a>
+      </div>
+
+
+    </section>
+
+
+    <section class="px-3 mx-auto max-w-7xl pb-11">
+
+      <h1 class="font-title text-4xl font-semibold">Nós somos a Retenmax</h1>
+      <h2 class="font-title text-xl mt-6 ">Líder em gestão e tecnologia</h2>
+
+      <p class="font-text text-base md:text-xl font-light mt-8">A RetenMax é referência em assessoria empresarial,
+        unindo gestão moderna, inteligência de dados e tecnologia de ponta para transformar empresas em verdadeiras
+        máquinas de crescimento sustentável. </p>
+      <p class="font-text text-base md:text-xl font-light mt-4"><span class="gradient-text font-semibold">Com atuação em
+          diversos estados do Brasil e também no exterior</span>, a RetenMax foi criada para elevar e moldar negócios,
+        integrando as quatro áreas vitais para o sucesso empresarial: Gestão, Finanças, Marketing e Inteligência
+        Artificial.
+      </p>
+      <p class="font-text text-base md:text-xl font-light mt-4">Nossa metodologia exclusiva, baseada na retenção de
+        talentos internos (colaboradores) e externos (clientes), já ajudou dezenas de empresas a estruturarem seus
+        processos, potencializarem suas equipes e alcançarem resultados sólidos e previsíveis.
+      </p>
+      <p class="font-text text-base md:text-xl font-light mt-4">Nós entregamos o que o empresário realmente precisa:
+        organização, dados estratégicos, performance comercial e inovação tecnológica — tudo isso em projetos 100%
+        adaptados à realidade de cada empresa.
+      </p>
+
+    </section>
+
+
+    <section class="px-3 max-w-7xl mx-auto pb-11 flex items-center justify-center flex-col">
+
+      <h3 class="font-title font-semibold text-[32px] md:text-[38px] md:max-w-[25ch] text-center leading-[39px] mt-16">
+        <span class="gradient-text">Para quem</span> é a academia de gestão empresarial?
+      </h3>
+
+      <div class="grid md:grid-cols-2 items-center justify-center gap-8 py-8">
+
+        <div class="relative p-[1px] rounded-sm bg-gradient-to-r from-0% to-[#A2A2A2] max-w-[450px] md:h-[200px] op">
+          <div class="rounded-sm bg-[#3C3C3C] h-full w-full p-4">
+
+            <img src="src/images/icons/business-02.svg">
+
+            <p class="font-text text-xl pt-3">Para empresários e empreendedores que querem estruturar seu negócio para
+              crescer com previsibilidade e segurança.</p>
+
+          </div>
+        </div>
+
+
+        <div class="relative p-[1px] rounded-sm bg-gradient-to-r from-0% to-[#A2A2A2] max-w-[450px] md:h-[200px] op">
+          <div class="rounded-sm bg-[#3C3C3C] h-full w-full p-4">
+
+            <img src="src/images/icons/crowded.svg">
+
+            <p class="font-text text-xl pt-3">Para equipes comerciais e administrativas que desejam evoluir suas
+              habilidades e melhorar sua performance de forma prática e aplicada.</p>
+
+          </div>
+        </div>
+
+
+        <div class="relative p-[1px] rounded-sm bg-gradient-to-r from-0% to-[#A2A2A2] max-w-[450px] md:h-[200px] op">
+          <div class="rounded-sm bg-[#3C3C3C] h-full w-full p-4">
+
+            <img src="src/images/icons/process.svg">
+
+            <p class="font-text text-xl pt-3">Para empresas que já vendem, mas sentem que falta organização, controle
+              financeiro, processos claros e uso inteligente da tecnologia.</p>
+
+          </div>
+        </div>
+
+
+        <div class="relative p-[1px] rounded-sm bg-gradient-to-r from-0% to-[#A2A2A2] max-w-[450px] md:h-[200px] op">
+          <div class="rounded-sm bg-[#3C3C3C] h-full w-full p-4">
+
+            <img src="src/images/icons/leader.svg">
+
+            <p class="font-text text-xl pt-3">Para líderes e gestores que precisam dominar vendas, marketing, finanças,
+              processos e inovação tecnológica.</p>
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+
+
+
+    <section class="px-3 mx-auto max-w-7xl flex flex-col md:flex-row">
+
+      <div>
+        <h1 class="font-title text-4xl md:text-5xl font-semibold">Assista o conteúdo de forma organizada!</h1>
+
+        <img src="src/images/mockup.png" class="md:hidden py-6" alt="">
+
+        <ul class="flex flex-col ">
+          <li class="flex items-center gap-3 mt-8 flex-row">
+            <img src="src/images/icons/check.svg" class="block" alt="">
+            <p class="block font-text  text-xl">Aula direto ao ponto sem enrolação</p>
+          </li>
+          <li class="flex items-center mt-3 gap-3 flex-row">
+            <img src="src/images/icons/check.svg" class="block" alt="">
+            <p class="block font-text text-xl">+ de 50 aulas para você aprender e aplicar</p>
+          </li>
+          <li class="flex items-center mt-3  gap-3 flex-row">
+            <img src="src/images/icons/check.svg" class="block" alt="">
+            <p class="block font-text text-xl">Conteúdos novos e atualizados</p>
+          </li>
+        </ul>
+        <div class=" flex items-center justify-center md:justify-start">
+
+          <a href="#vendas" data-botao="botao-3" 
+            class="btn-vendas mt-6 bg-gradient-to-r from-[#F26131] to-[#D33500] py-2 px-14 font-title font-semibold text-sm md:text-base cursor-pointer hover:scale-95 ease-in duration-300 inline-flex items-center justify-center gap-4">
+            QUERO ME INSCREVER AGORA
+            <img src="src/images/icons/arrow-btn.svg" class="w-4 h-4 relative top-[-2px]" alt="">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hidden md:flex">
+        <img src="src/images/mockup.png" class="w-full" alt="">
+      </div>
+
+
+    </section>
+
+
+
+    <section id="vendas" class="px-3 mx-auto max-w-7xl flex flex-col items-center justify-center py-16">
+
+      <h1
+        class="font-title font-bold md:font-semibold max-w-[38ch] text-center text-[28px] leading-8 md:leading-12 md:text-4xl ">
+        Aprenda com quem vive gestão de verdade e acelere seu negócio com conteúdo que gera resultado real.</h1>
+
+      <div
+        class="bg-[#010A20] mt-10 border-1 border-[#969696] rounded-md flex items-center justify-center flex-col p-6">
+        <img src="src/images/logo.png" class="w-[60%]" alt="">
+
+        <span class="font-text text-base mt-4 font-light">Pré-venda: de <span
+            class="line-through text-red-500 font-bold text-[18px]">R$ 1.997</span> por</span>
+
+        <span class="font-text text-3xl font-bold mt-4  divide-y divide-gray-200">R$ 59,90/mês</span>
+
+        <a href="https://pay.kiwify.com.br/OHJ0pnm" id="btn-checkout"
+          class="mt-6 bg-gradient-to-r from-[#F26131] to-[#D33500] py-2 px-14 font-title font-semibold text-[13px] md:text-base cursor-pointer hover:scale-95 ease-in duration-300 inline-flex items-center justify-center gap-4">
+          QUERO ME INSCREVER AGORA
+          <img src="src/images/icons/arrow-btn.svg" class="w-4 h-4 relative top-[-2px]" alt="">
+        </a>
+
+      </div>
+
+    </section>
+
+    <section class="px-3 mx-auto max-w-7xl flex flex-col items-center justify-center py-16">
+      <span class="font-title text-[#818181] font-bold text-base text-center">FAQ</span>
+      <h1 class="text-center font-title text-4xl md:text-5xl font-extrabold mt-4">Perguntas frequentes</h1>
+
+
+      <div class="w-full max-w-xl mx-auto  rounded-md shadow-md ">
+
+        <!-- Item 1 -->
+        <div
+          class="accordion-item mt-9 bg-gradient-to-b from-[#242424] to-[#212121] p-2 rounded-md border-1 border-[#404040]">
+          <button class="w-full text-left px-6 py-4 font-semibold text-lg flex justify-between items-center toggle-btn">
+            O que é a ElevaMax e para quem ela é indicada?
+            <span class="text-xl transform transition-transform duration-300"><img src="src/images/icons/arroww.svg"
+                class="arrow-icon w-4 h-4"></span>
+          </button>
+
+          <div class="px-6 py-4 hidden content">
+            A ElevaMax é uma plataforma de capacitação empresarial contínua, criada para empresários, líderes e equipes
+            que buscam estrutura, crescimento previsível e uso estratégico de dados, processos e tecnologia.
+          </div>
+        </div>
+        <!-- Item 1 -->
+        <div
+          class="accordion-item mt-9 bg-gradient-to-b from-[#242424] to-[#212121] p-2 rounded-md border-1 border-[#404040]">
+          <button class="w-full text-left px-6 py-4 font-semibold text-lg flex justify-between items-center toggle-btn">
+            Quais temas são abordados no treinamento da ElevaMax?
+            <span class="text-xl transform transition-transform duration-300"><img src="src/images/icons/arroww.svg"
+                class="arrow-icon w-4 h-4"></span>
+          </button>
+
+          <div class="px-6 py-4 hidden content">
+            Você vai aprender sobre vendas, marketing, finanças, processos, liderança, planejamento estratégico, cultura
+            organizacional, indicadores de performance e inteligência artificial, com aulas diretas e aplicáveis.
+          </div>
+        </div>
+
+        <!-- Item 1 -->
+        <div
+          class="accordion-item mt-9 bg-gradient-to-b from-[#242424] to-[#212121] p-2 rounded-md border-1 border-[#404040]">
+          <button class="w-full text-left px-6 py-4 font-semibold text-lg flex justify-between items-center toggle-btn">
+            Como funciona o acesso ao conteúdo?
+            <span class="text-xl transform transition-transform duration-300"><img src="src/images/icons/arroww.svg"
+                class="arrow-icon w-4 h-4"></span>
+          </button>
+
+          <div class="px-6 py-4 hidden content">
+            O conteúdo é 100% online, com mais de 50 aulas organizadas por trilhas de conhecimento, atualizações
+            frequentes, materiais de apoio e acesso prático para aplicação imediata no seu negócio.
+
+          </div>
+        </div>
+
+        <!-- Item 1 -->
+        <div
+          class="accordion-item mt-9 bg-gradient-to-b from-[#242424] to-[#212121] p-2 rounded-md border-1 border-[#404040]">
+          <button class="w-full text-left px-6 py-4 font-semibold text-lg flex justify-between items-center toggle-btn">
+            Quais são os principais problemas que a ElevaMax ajuda a resolver?
+            <span class="text-xl transform transition-transform duration-300"><img src="src/images/icons/arroww.svg"
+                class="arrow-icon w-4 h-4"></span>
+          </button>
+
+          <div class="px-6 py-4 hidden content">
+            Falta de clareza estratégica, gestão financeira ineficiente, marketing e vendas desconectados, ausência de
+            processos organizados, baixo uso de tecnologia e liderança despreparada são alguns dos desafios resolvidos.
+
+          </div>
+        </div>
+        <!-- Item 1 -->
+        <div
+          class="accordion-item mt-9 bg-gradient-to-b from-[#242424] to-[#212121] p-2 rounded-md border-1 border-[#404040]">
+          <button class="w-full text-left px-6 py-4 font-semibold text-lg flex justify-between items-center toggle-btn">
+            Qual é o investimento e há garantia?
+            <span class="text-xl transform transition-transform duration-300"><img src="src/images/icons/arroww.svg"
+                class="arrow-icon w-4 h-4"></span>
+          </button>
+
+          <div class="px-6 py-4 hidden content">
+            O investimento está em pré-venda por R$ 59,90/mês e sim, oferecemos 7 dias de garantia para você
+            experimentar o conteúdo com tranquilidade.
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+  </div>
+
+  <footer class="max-w-7xl mx-auto bg-[#000717] px-3 py-8">
+    <span class="font-text text-base md:text -xl text-center md:text-left"><a href="retenmax.com.br"
+        target="_blank">Retenmax</a> © Todos os direitos reservados.</span>
+  </footer>
+
+</body>
+
+</html>
