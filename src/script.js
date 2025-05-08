@@ -1,4 +1,15 @@
 
+document.querySelectorAll(".toggle-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector(".arrow-icon");
+
+    content.classList.toggle("hidden");
+    icon.classList.toggle("rotate-90");
+  });
+});
+
+
 
 document.addEventListener("mousemove", (e) => {
     const cards = document.querySelectorAll(".card-hover-mouse");
@@ -37,17 +48,6 @@ document.addEventListener("mousemove", (e) => {
     document.addEventListener("touchmove", handleMove);
   });
 
-
-
-  document.querySelectorAll(".toggle-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const content = btn.nextElementSibling;
-      const icon = btn.querySelector(".arrow-icon");
-
-      content.classList.toggle("hidden");
-      icon.classList.toggle("rotate-90");
-    });
-  });
 
 
   
